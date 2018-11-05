@@ -1,0 +1,48 @@
+/* MessagesComponent's private CSS styles */
+@color_1: red;
+@color_2: crimson;
+@color_3: #aaa;
+@color_4: #888;
+@font_family_1: Arial, Helvetica, sans-serif;
+@font_family_2: Cambria, Georgia;
+@font_family_3: Arial;
+@background_color_1: #eee;
+@background_color_2: #cfd8dc;
+
+h2 {
+	color: @color_1;
+	font-family: @font_family_1;
+	font-weight: lighter;
+}
+body {
+	margin: 2em;
+	color: @color_2;
+	font-family: @font_family_2;
+}
+input[text] {
+	color: @color_2;
+	font-family: @font_family_2;
+}
+button {
+	color: @color_2;
+	font-family: @font_family_2;
+	&:hover {
+		background-color: @background_color_2;
+	}
+	&:disabled {
+		background-color: @background_color_1;
+		color: @color_3;
+		cursor: auto;
+	}
+}
+button.clear {
+	font-family: @font_family_3;
+	background-color: @background_color_1;
+	border: none;
+	padding: 5px 10px;
+	border-radius: 4px;
+	cursor: pointer;
+	cursor: hand;
+	color: @color_4;
+	margin-bottom: 12px;
+}
